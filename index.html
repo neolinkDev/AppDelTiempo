@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Pronóstico del Tiempo">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <meta name="keywords" content="html, css, javascript, fetch api, pronóstico del tiempo, forecast, weather">
+    <title>El Tiempo</title>
+    <meta name="description" content="App que usa Fetch API para el pronóstico del tiempo, construida con HTML, CSS y Vanilla JS.">
+    <link rel="canonical" href="">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="header__logo">
+            <a href="./">
+                <img src="assets/logo.png" alt="logotipo">
+                <span>El Tiempo</span>
+            </a>
+        </h2>
+        <form class="formulario" id="formulario" autocomplete="off">
+            <div class="inputs">
+                <div class="campo">
+                    <input type="text" name="city" id="city" placeholder="Escribe aqui tu Ciudad">
+                </div>
+                <div>
+                    <input type="image" alt="submit" src="assets/search.svg">
+                </div>
+                <div class="warn"></div>
+            </div>
+        </form>
+        <nav class="nav"></nav>
+    </header><!-- fin header -->
+    <main class="main container">
+        <h1 class="main__h1">Tiempo Actual</h1>
+        <div class="main__resultados container" id="resultado"></div>
+    </main><!-- fin main -->
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
